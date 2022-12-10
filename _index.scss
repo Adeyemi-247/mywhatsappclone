@@ -1,0 +1,610 @@
+header{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    background: $color3;
+    height: 10vh;
+    .headiv{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        color: $color1;
+        .what{
+            width: 40%;
+        }
+        .headwhat2{
+            position: relative;
+            width: 50%;
+            display: flex;
+            gap: 2rem;
+            div{
+
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+nav{
+    position: sticky;
+    // position: relative;
+    top:0;
+    width: 100%;
+    padding: 0 1ch;
+    background: $color3;
+    // background: yellow;
+    height: 5vh;
+    align-items:flex-end;
+    display: flex;
+    justify-content: end;
+    z-index: 50;
+    .navdiv1{
+        width: 100%;
+        // position: relative;
+        display: flex;
+        gap: 3rem;
+        color: $color1;
+        h5, .men{
+            cursor: pointer;
+            font-weight: bolder;
+            &:hover{
+                border: 3px solid $color4;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
+        }
+    }
+}
+
+
+.menubars{
+    position:absolute;
+    width: 42%;
+    background: $color3;
+    padding: 1ch;
+    // left: 0;
+    right: 0;
+    top: 0;
+    transform:translateX(110%);
+    transition: .5s ease-in-out;
+    // display: none;
+    z-index: 100;
+    .inmenu{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        button{
+            background: transparent;
+            border: none;
+            color: $color1;
+            text-align: justify;
+            cursor: pointer;
+        }
+    }
+}
+
+
+.chats{
+    position: relative;
+    width: 100%;
+    // height: 81vh;
+    background: $color1;
+    display: none;
+    padding: 1rem 0;
+    .chats2{
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .chats3{
+            position: relative;
+            width: 100%;
+            display: flex;
+            gap: 1rem;
+            padding: 0 0.5rem;
+            &:hover{
+                background: rgb(203, 201, 201);
+                cursor: pointer;
+            }
+            button{
+                width: 15%;
+                height: 8.5vh;
+                border: none;
+                border-radius: 50%;
+                .using{
+                    font-size: 30px;
+                    color: gray;
+                }
+            }
+            .indivv{
+                position: relative;
+                width: 80%;
+                cursor:pointer;
+                h3{
+                    color: $color2;
+                }
+                h5{
+                    display: flex;
+                    gap: 0.3rem;
+                    color: gray;
+                    span{
+                        color: rgb(0, 64, 255);
+                        display: flex;
+                        gap: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.contactlist{
+    position: fixed;
+    width: 20%;
+    right: 0;
+    // background: red;
+    top: 83%;
+    z-index: 100;
+    .contactlist2{
+        position: relative;
+        width: 90%;
+        // background: $color2;
+        div{
+            width: 80%;
+            // background: gray;
+            display: flex;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            height: 9vh;
+            .mess{
+                color: $color4;
+                font-size: 40px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.search{
+    position: absolute;
+    width: 100%;
+    background: $color1;
+    padding: 1rem;
+    top: 0;
+    z-index: 200;
+    transform:translateX(110%);
+    transition: .5s ease-in-out;
+    .search2{
+        position: relative;
+        width: 100%;
+        .search3{
+            width: 100%;
+            position: relative;
+            .search4{
+                position: relative;
+                width: 100%;
+                display: flex;
+                background: $color1;
+                gap: 1rem;
+                .baksarch{
+
+                    width: 5%;
+                    .arrn{
+                        color: gray;
+                        cursor: pointer;
+                    }
+                }
+                input{
+                    width: 95%;
+                    border: none;
+                    outline: none;
+                }
+            }
+            .search5{
+                position: relative;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+                margin-top: 1rem;
+                div{
+                    width: 25%;
+                    display: flex;
+                    gap: 10px;
+                    color: gray;
+                    // background: gray;
+                }
+            }
+        }
+    }
+}
+
+// WHATSAPP SETTINGS
+
+.settles{
+    position: fixed;
+    width: 100%;
+    background: $color3;
+    padding: 0.5rem;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 100;
+    .settles2{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        div:first-child{
+            width: 10%;
+            color: $color1;
+            cursor: pointer;
+            .lent{
+                font-size: 17px;
+            }
+        }
+        div:nth-child(2){
+            width: 80%;
+            h3{
+                color: $color1;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.arrangeset{
+    position: relative;
+    width: 100%;
+    padding: 6rem 0;
+    // font-family: cursive;
+    display: none;
+    .arrangeset2{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .websn{
+            display: flex;
+            gap: 2rem;
+            // justify-content: center;
+            // align-items: center;
+            cursor: pointer;
+            padding: 0 1rem;
+            p{
+                color: gray;
+                margin-top: 8px;
+            }
+
+            .picsweb{
+                background: rgb(218, 216, 216);
+                width: 15%;
+                // display: flex;
+                border: none;
+                // justify-items: center;
+                // align-items: center;
+                border-radius: 50%;
+               
+                .doms{
+                    font-size: 26px;
+                    color: gray;
+                }
+            }
+            .scon{
+                width: 10%;
+                color: $color3;
+                font-size: 20px;
+                margin-top: 1ch;
+            }
+        }
+        .derest{
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            // margin-top: 1ch;
+            &:hover{
+                background: rgb(203, 201, 201);
+                cursor: pointer;
+                // p{
+                //     color: $color1;
+                // }
+            }
+            div:first-child{
+                color: gray;
+            }
+            div:nth-child(2){
+                h3{
+                    font-size: 15px;
+                    color: rgb(30, 30, 30);
+                }
+                p{
+                    color: gray;
+                    margin-top: 1ch;
+                }
+            }
+        }
+    }
+}
+
+.dmessage{
+    position: fixed;
+    width: 100%;
+    background: $color3;
+    padding: 0.3rem;
+    height: 10vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 100;
+    .dmessage2{
+        position: relative;
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        // background: red;
+        // justify-content: space-between;
+        .dmback{
+            width: 2%;
+            cursor: pointer;
+            .dmarr{
+                color: $color1;
+            }
+        }
+        button{
+            background: $color1;
+            width: 15%;
+            border: none;
+            // height: 5vh;
+            padding: 0.6rem;
+            border-radius: 50%;
+            .dmpers{
+                color: gray;
+                font-size: 25px;
+            }
+        }
+        div{
+            width: 33%;
+            h3{
+                color: $color1;
+            }
+        }
+        .videocall{
+            width: 30%;
+            display: flex;
+            position: relative;
+            gap: 1rem;
+            div{
+                color: $color1;
+            }
+        }
+    }
+}
+
+
+.intexits{
+    position:relative;
+    width: 100%;
+    background: rgba(183, 183, 183, 0.537);
+    padding: 10px;
+    display: none;
+    // z-index: 100;
+    .zonb{
+        position: relative;
+        width: 100%;
+        margin-top: 5rem;
+        .flexleft{
+            width: 100%;
+            position: relative;
+            display: flex;
+            button{
+                min-height: 6vh;
+                min-width: 20%;
+                padding: 5px;
+                text-align: justify;
+                border-radius: 1.8ch;
+                background: $color1;
+                border: none;
+                border-top-left-radius: 0;
+                color: gray;
+                font-size: 15px;
+            }
+        }
+        .flexright{
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            padding: 5px;
+            margin-top: 1.5ch;
+            margin-bottom: 1.5ch;
+            button{
+                min-height: 6vh;
+                min-width: 20%;
+                border: none;
+                font-size: 15px;
+                // min-height: 6vh;
+                padding: 3px;
+                text-align: justify;
+                background: $color4;
+                color: $color1;
+                border-radius: 2ch;
+                border-top-right-radius: 0;
+            }
+        }
+    }
+    .diean{
+        position: relative;
+        width: 100%;
+        margin-top: 4rem;
+        button:first-child{
+            width: 45%;
+            min-height: 3vh;
+            padding: 3px;
+            text-align: justify;
+            border-radius: 2ch;
+            background: $color1;
+            border: none;
+            border-top-left-radius: 0;
+            color: gray;
+            font-size: 15px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            .zizin{
+                display: flex;
+                gap: 0;
+                justify-content: flex-end;
+                .nife{
+
+                    color: blue;
+                }
+            }
+        }
+        button:nth-child(2){
+            width: 45%;
+            margin-top: 3rem;
+            font-size: 15px;
+            // min-height: 6vh;
+            padding: 3px;
+            text-align: justify;
+            background: $color4;
+            color: $color1;
+            border: none;
+            border-radius: 2ch;
+            border-top-right-radius: 0;
+        }
+        .diean2{
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    .intexits2{
+        position:relative;
+        width: 100%;
+        display: flex;
+        margin-top: 1rem;
+        align-items: center;
+        gap:15px;
+        z-index: 100;
+        // background: red;
+        .intexits3{
+            position:relative;
+            display: flex;
+            width: 90%;
+            background: $color1;
+            gap: 1rem;
+            color: gray;
+            padding: 1rem;
+            border-radius: 3ch;
+            input{
+                background: transparent;
+                border: none;
+                width: 60%;
+                outline: none;
+            }
+        }
+        .divmic{
+            width: 12%;
+            background: $color3;
+            padding: 0.7rem;
+            text-align: center;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            font-size: 17px;
+            color: $color1;
+            cursor: pointer;
+            .seanns{
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media screen and(min-width:437px){
+    header{
+        width: 100%;
+        position: relative;
+        .headiv{
+            width: 100%;
+            position: relative;
+            display: flex;
+            gap: 12rem;
+        }
+    }
+
+    nav{
+        position: sticky;
+        width: 100%;
+        height: 8vh;
+        .navdiv1{
+            position: relative;
+            width: 100%;
+            display: flex;
+            gap: 5rem;
+        }
+    }
+}
+
+@media screen and(min-width:487px){
+    header{
+        width: 100%;
+        position: relative;
+        .headiv{
+            width: 100%;
+            position: relative;
+            display: flex;
+            gap: 15rem;
+        }
+    }
+
+    nav{
+        position: sticky;
+        width: 100%;
+        height: 8vh;
+        .navdiv1{
+            position: relative;
+            width: 100%;
+            display: flex;
+            gap: 6rem;
+        }
+    }
+    .arrangeset{
+        position: relative;
+        width: 100%;
+        .arrangeset2{
+            position: relative;
+            width: 100%;
+            .websn{
+                position: relative;
+                width: 100%;
+                display: flex;
+                gap: 7rem;
+                .scon{
+                    width: 10%;
+                }
+                div{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
